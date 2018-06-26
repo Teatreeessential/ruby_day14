@@ -4,4 +4,10 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   Character.create
+50.times do
+    post = Post.create(title: Faker::Overwatch.quote,contents: Faker::Lorem.paragraph)
+    10.times do
+        post.comments.create(content: Faker::Overwatch.quote)
+    end
+end
