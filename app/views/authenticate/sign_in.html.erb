@@ -1,0 +1,8 @@
+<h1>로그인</h1>
+<%= form_tag do %>
+    <strong>아이디</strong>
+    <%= text_field_tag :user_name %><br/>
+    <strong>비밀번호</strong>
+    <%= password_field_tag :password %><br/>
+    <%=submit_tag 'Sign In'%>
+<%end%>

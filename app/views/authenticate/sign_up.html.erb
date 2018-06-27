@@ -1,0 +1,10 @@
+<h1>회원가입</h1>
+<%=form_tag do %>
+    <strong>유저이름</strong></br>
+    <%=text_field_tag :user_name%></br>
+        <strong>패스워드</strong></br>
+    <%=password_field_tag :password%></br>
+        <strong>패스워드확인</strong></br>
+    <%=password_field_tag :password_confirmation%></br>
+    <%=submit_tag 'Sign up'%>
+<%end%>    
