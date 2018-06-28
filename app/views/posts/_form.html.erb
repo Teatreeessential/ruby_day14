@@ -11,6 +11,11 @@
     <%= f.text_area :contents, class: 'form-control' %>
     <!--이게 자동으로 에디트와 뉴에 맞춰서 도와주나?-->
   </div>
+  
+   <div class="field">
+    <%= f.label :image_path %>
+    <%= f.file_field :image_path, class: 'form-control' %>
+  </div>
 
   <div class="actions">
     <%= f.submit '작성하기', class: 'btn btn-info'%>

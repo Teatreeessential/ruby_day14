@@ -10,7 +10,7 @@ class AuthenticateController < ApplicationController
         
         if @user.save
             redirect_to root_path, flash: {success: '회원가입 성공'}
-        else
+        elif @user.error
             redirect_to :back, flash: {success: '회원가입 실패'}
         end
     end
